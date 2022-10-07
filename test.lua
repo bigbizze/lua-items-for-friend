@@ -33,7 +33,7 @@ for k, v in pairs(items) do
     -- writing its properties into the csv format for a row
     interp = string.format("%s,%s,%s", v["id"], v["gem_cost"], v["weight"])
 
-    -- combining the existing string (the first %s), and the next row of items created
+    -- combining the existing string (the first %s below), and the next row of items created
     -- above together and separating with a newline character
     out_csv_str = string.format("%s\n%s", out_csv_str, interp)
 end
