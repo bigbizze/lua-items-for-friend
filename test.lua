@@ -1,7 +1,3 @@
-
-
-
-
 items = {
     StarFruit = {
         id = "StarFruit", 
@@ -30,7 +26,7 @@ out_csv_str = "id,gem_cost,weight"
 
 -- going through each item in the array
 for k, v in pairs(items) do
-    -- writing the properties of each item (which is an object) in the array into the csv 
+    -- writing the properties of each item in the array (each of which is an object) into the csv 
     -- format for a row using string interpolation
     interp = string.format("%s,%s,%s", v["id"], v["gem_cost"], v["weight"])
 
